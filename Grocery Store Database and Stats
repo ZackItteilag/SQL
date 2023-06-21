@@ -1,0 +1,58 @@
+--The first step was to create a table and to label the rows in the table
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, category TEXT, total_sold INTEGER);
+
+
+-- Then I inputted different inventory items 
+
+
+INSERT INTO store VALUES (1, "Watermelon", 3.99, 150, "Produce", 450);
+
+INSERT INTO store VALUES (2, "Ground Sausage", 5.99, 15, "Meat", 35);
+
+INSERT INTO store VALUES (3, "Provolone Cheese", 3.50, 30, "Dairy", 100);
+
+INSERT INTO store VALUES (4, "Egg Noodles", 2.99, 65, "Pasta", 235);
+
+INSERT INTO store VALUES (5, "Sour Cream", 4.25, 100, "Condiments", 250);
+
+INSERT INTO store VALUES (6, "Corn", 5.25, 250, "Produce", 500);
+
+INSERT INTO store VALUES (7, "Oreo Thins", 5.99, 125, "Cookies", 315);
+
+INSERT INTO store VALUES (8, "Chicken Thighs", 6.99, 67, "Meat", 153);
+
+INSERT INTO store VALUES (9, "Teriyaki Sauce", 3.75, 13, "International", 17);
+
+INSERT INTO store VALUES (10, "Tortillas", 3.99, 26, "International", 56);
+
+
+--this displayed the data (inventory) by price (least to greatest)
+
+SELECT * FROM store ORDER BY price asc;
+
+--this displayed the data that is from the produce
+
+SELECT category FROM store where category = produce;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
